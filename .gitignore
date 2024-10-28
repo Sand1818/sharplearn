@@ -23,6 +23,11 @@ yarn-debug.log*
 yarn-error.log*
 node_modules
 
-/src/components/LoginPage.js
-/src/components/LoginPage.css
+# Firebase config
 /firebase.js
+/src/components/FirebaseConfig.js
+
+# Incomplete
+/src/components/Home.js
+/src/components/Home.css
+/src/components/Progress.js
