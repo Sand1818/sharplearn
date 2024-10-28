@@ -31,3 +31,5 @@ node_modules
 /src/components/Home.js
 /src/components/Home.css
 /src/components/Progress.js
+/src/components/Calender.js
+/src/components/Navbar.js
