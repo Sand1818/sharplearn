@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import "./LoginPage.css";
+import styles from "./LoginPage.module.css";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-//import { database } from "./FirebaseConfig";
 import { database } from "../FirebaseConfig";
 
 function Login() {
@@ -13,7 +12,7 @@ function Login() {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    
+
     if (type === "signup") {
       createUserWithEmailAndPassword(database, email, password)
         .then((data) => {
@@ -40,38 +39,38 @@ function Login() {
   };
 
   return (
-    <div className="wrapper">
+    <div className={styles.wrapper}>
       <h1>{isLogin ? "Login" : "Register"}</h1>
-      
+
       <form onSubmit={(e) => handleSubmit(e, isLogin ? "signin" : "signup")}>
-        <div className="input-box">
+        <div className={styles.inputBox}>
           <input name="email" type="text" placeholder="Email" required />
           <i className="bx bxs-user"></i>
         </div>
-        
-        <div className="input-box">
+
+        <div className={styles.inputBox}>
           <input name="password" type="password" placeholder="Password" required />
           <i className="bx bxs-lock-alt"></i>
         </div>
 
         {isLogin && (
-          <div className="remember-forgot">
+          <div className={styles.rememberForgot}>
             <label>
               <input type="checkbox" /> Remember Me
             </label>
-            <p onClick={handleReset} className="forgot-link">Forgot Password?</p>
+            <p onClick={handleReset} className={styles.forgotLink}>Forgot Password?</p>
           </div>
         )}
 
-        <button type="submit" className="btn">
+        <button type="submit" className={styles.btn}>
           {isLogin ? "Login" : "Register"}
         </button>
 
-        <div className="register-link">
+        <div className={styles.registerLink}>
           {isLogin ? (
-            <p>Don't have an account? <span onClick={() => setIsLogin(false)} className="toggle-link">Register</span></p>
+            <p>Don't have an account? <span onClick={() => setIsLogin(false)} className={styles.toggleLink}>Register</span></p>
           ) : (
-            <p>Already have an account? <span onClick={() => setIsLogin(true)} className="toggle-link">Login</span></p>
+            <p>Already have an account? <span onClick={() => setIsLogin(true)} className={styles.toggleLink}>Login</span></p>
           )}
         </div>
       </form>
