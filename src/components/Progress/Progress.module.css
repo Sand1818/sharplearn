@@ -1,0 +1,56 @@
+.container {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+
+  width: px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(6px);
+  color: #000000;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+
+.header {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 30px 40px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.table th {
+  background-color: #75b5e0d8;
+  color: white;
+}
+
+.input {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.addButton {
+  padding: 5px 10px;
+  background-color: #75b5e0d8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.addButton:hover {
+  background-color: #001f33;
+}
