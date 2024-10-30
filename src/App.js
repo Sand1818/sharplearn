@@ -1,7 +1,7 @@
 //import logo from './logo.svg';
 //import './App.css';
 import React from 'react';
-import Login from './components/LoginPage';
+import Login from './components/Login/LoginPage';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home'; //Ignore red for now- working with error
 

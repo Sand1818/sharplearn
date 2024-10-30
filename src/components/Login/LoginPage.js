@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./LoginPage.css";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { database } from "./FirebaseConfig";
+//import { database } from "./FirebaseConfig";
+import { database } from "../FirebaseConfig";
 
 function Login() {
-  const [isLogin, setIsLogin] = useState(true); // Default to Login form
+  const [isLogin, setIsLogin] = useState(true);
   const history = useNavigate();
 
   const handleSubmit = (e, type) => {

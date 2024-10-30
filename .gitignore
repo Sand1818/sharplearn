@@ -30,6 +30,12 @@ node_modules
 # Incomplete
 /src/components/Home.js
 /src/components/Home.css
-/src/components/Progress.js
+
 /src/components/Calender.js
 /src/components/Navbar.js
+
+/src/components/Calendar
+
+/src/components/Navigation
+
+/src/components/Progress/Progress
