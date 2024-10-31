@@ -8,6 +8,8 @@ import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
 import styles from './Planner.module.css'
+import NavigationBar from "../Navigation/NavigationBar";
+
 
 function Planner() {
     const locales = {
@@ -71,6 +73,8 @@ function Planner() {
     }
 
     return (
+        <>
+        <NavigationBar />
         <div className={styles.Planner}>
             <h1>Schedule</h1>
             <div>
@@ -86,6 +90,7 @@ function Planner() {
             </div>
             <Calendar localizer={localizer} events={allEvents} startAccessor="start" endAccessor="end" style={{ height: 500, margin: "50px" }} />
         </div>
+        </>
     );
 }
 

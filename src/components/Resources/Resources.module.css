@@ -1,0 +1,65 @@
+.container {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  width: 1000px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  color: #000000;
+  border-radius: 12px;
+  padding: 30px 40px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.addButton {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #07436bd8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.addButton:hover {
+  background-color: #001d3b;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.comingSoon {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+  color: #000000;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Progress.module.css';
+import NavigationBar from '../Navigation/NavigationBar';
 
 const Progress = () => {
   const [data, setData] = useState([]);
@@ -27,6 +28,8 @@ const Progress = () => {
   };
 
   return (
+    <>
+    <NavigationBar />
     <div className={styles.container}>
       <h1 className={styles.header}>Grades Progress</h1>
       <table className={styles.table}>
@@ -112,6 +115,7 @@ const Progress = () => {
         </tbody>
       </table>
     </div>
+  </>
   );
 };
 

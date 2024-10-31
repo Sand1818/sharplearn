@@ -45,12 +45,10 @@ function Login() {
       <form onSubmit={(e) => handleSubmit(e, isLogin ? "signin" : "signup")}>
         <div className={styles.inputBox}>
           <input name="email" type="text" placeholder="Email" required />
-          <i className="bx bxs-user"></i>
         </div>
 
         <div className={styles.inputBox}>
           <input name="password" type="password" placeholder="Password" required />
-          <i className="bx bxs-lock-alt"></i>
         </div>
 
         {isLogin && (

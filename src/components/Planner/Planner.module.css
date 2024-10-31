@@ -14,13 +14,13 @@
     padding: 30px 40px;
 }
 
-h1 {
+.h1 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 10px;
 }
 
-input[type="text"] {
+.input[type="text"] {
     padding: 8px;
     font-size: 1rem;
     border: 1px solid #ccc;
@@ -28,12 +28,12 @@ input[type="text"] {
     transition: border-color 0.3s ease;
 }
 
-input[type="text"]:focus {
+.input[type="text"]:focus {
     border-color: #007bff;
     outline: none;
 }
 
-button {
+.button {
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
@@ -44,6 +44,6 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #001d3b;
 }

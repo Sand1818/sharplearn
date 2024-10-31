@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './components/Home/Home'
 import Progress from './components/Progress/Progress';
 import Planner from './components/Planner/Planner';
+import Resources from './components/Resources/Resources';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/progress" element={<Progress />} />
         <Route path="/planner" element={<Planner />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
     </BrowserRouter>
   );
