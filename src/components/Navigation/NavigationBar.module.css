@@ -1,0 +1,77 @@
+/* Fixed header with dark grey background */
+.container {
+  position: fixed;
+  top: 0;
+  left: 0; /* Added to ensure it starts from the left */
+  width: 100%;
+  height: 100px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0; /* Removed padding to touch the left */
+  box-sizing: border-box; /* Ensures padding is included in width */
+  z-index: 1000; /* Ensures the navbar is on top */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Centered navigation links */
+.menuItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuItems ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  padding: 0 15px;
+}
+
+.menuItem a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.menuItem a:hover {
+  color: #ddd;
+}
+
+/* Right-aligned profile icon and sign-out button */
+.profileSection {
+  display: flex;
+  align-items: center;
+}
+
+.profileIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.signOutButton {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.signOutButton:hover {
+  background-color: #555;
+  color: #ddd;
+}

@@ -36,4 +36,6 @@ node_modules
 
 /src/components/Calendar
 
-/src/components/Navigation
+/src/components/Navigation/Navigation.js
+/src/components/Navigation/Navigation.module.css
+/src/components/Navigation/profile-icon.png
