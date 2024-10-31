@@ -28,8 +28,8 @@ node_modules
 /src/components/FirebaseConfig.js
 
 # Incomplete
-/src/components/Home.js
-/src/components/Home.css
+/src/components/Home
+/src/components/Header
 
 /src/components/Calender.js
 /src/components/Navbar.js
@@ -37,4 +37,3 @@ node_modules
 /src/components/Calendar
 
 /src/components/Navigation
-
