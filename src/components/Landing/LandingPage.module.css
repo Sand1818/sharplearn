@@ -1,0 +1,64 @@
+.container {
+  width: 750px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px;
+  text-align: center;
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.welcomeSection {
+  margin-top: 0px;
+}
+
+.heading {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.description {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.getStartedSection {
+  margin-top: 0px;
+}
+
+.message {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  background-color: #07436bd8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #001d3b;
+}
